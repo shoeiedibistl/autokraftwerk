@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTOkraftwerk</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="icons-font.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="body">
+    <header class="header" data-scroll="data-scroll-animate">
+      <div class="header__info">
+        <h1 class="header__title">кузов ручной работы</h1>
+        <h2 class="header__desc">
+          Кузовной и малярный ремонт любой сложности в Воронеже
+        </h2>
+        <div class="header__scroll-buttons go-to">
+          <a
+            href="#"
+            class="go-to__link to-calc"
+            data-scroll="data-scroll-animate"
+            >узнать стоимость</a
+          >
+          <a
+            href="#services"
+            class="go-to__link read-more"
+            data-scroll="data-scroll-animate"
+            >смотреть больше</a
+          >
+        </div>
+      </div>
+
+      <div class="header__contacts">
+        <div class="header__socials">
+          <a
+            href="https://ok.ru/group/70000002350330/"
+            class="header__socials-link socials-ok first"
+            target="_blank"
+            data-hover-link="header-socials"
+            ><i class="icon-odnoklassniki"></i
+          ></a>
+          <a
+            href="https://vk.com/autokraftwerk"
+            class="header__socials-link socials-vk"
+            target="_blank"
+            data-hover-link="header-socials"
+            ><i class="icon-vk"></i
+          ></a>
+          <a
+            href="https://wa.me/+79525466444"
+            class="header__socials-link socials-wa"
+            target="_blank"
+            data-hover-link="header-socials"
+            ><i class="icon-whatsapp"></i
+          ></a>
+          <a
+            href="https://t.me/+79525466444"
+            class="header__socials-link socials-tg"
+            target="_blank"
+            data-hover-link="header-socials"
+            ><i class="icon-telegram"></i
+          ></a>
+          <button
+            id="share-btn"
+            class="header__socials-link header__socials-btn share-btn"
+            data-hover-link="header-socials"
+          >
+            <i id="share-btn-i" class="icon-share"></i>
+          </button>
+        </div>
+        <a href="#" class="header__address"
+          >г. Воронеж, ул. 9 Января, д. 211А/2Б</a
+        >
+      </div>
+    </header>
+
+    <div class="header__links" data-scroll="data-scroll-animate">
+      <nav class="header__links-wrapper">
+        <a href="#" class="logo">
+          <span class="logo__auto" data-scroll="data-scroll-animate">auto</span>
+          <span class="logo__kraftwerk" data-scroll="data-scroll-animate"
+            >kraftwerk</span
+          >
+          <img
+            class="logo__underline"
+            src="img/logo-underline.svg"
+            alt="logo underline"
+          />
+        </a>
+
+        <ul class="header__menu" data-scroll="data-scroll-animate">
+          <li class="header__menu-item desktop">
+            <a
+              href="#services"
+              class="header__menu-link"
+              data-hover-link="header"
+              >УСЛУГИ</a
+            >
+          </li>
+          <li class="header__menu-item desktop">
+            <a href="#works" class="header__menu-link" data-hover-link="header"
+              >НАШИ РАБОТЫ</a
+            >
+          </li>
+          <li class="header__menu-item desktop">
+            <a href="#" class="header__menu-link" data-hover-link="header"
+              >КАЛЬКУЛЯТОР</a
+            >
+          </li>
+          <li class="header__menu-item desktop">
+            <a href="#" class="header__menu-link" data-hover-link="header"
+              >оценка по фото</a
+            >
+          </li>
+          <li class="header__menu-item desktop">
+            <a href="#" class="header__menu-link" data-hover-link="header"
+              >О НАС</a
+            >
+          </li>
+          <li class="header__menu-item desktop">
+            <a href="#" class="header__menu-link" data-hover-link="header"
+              >КОНТАКТЫ</a
+            >
+          </li>
+          <li class="header__menu-item desktop">
+            <a href="#" class="header__menu-link last" data-hover-link="header"
+              >+7 (952) 546-64-44</a
+            >
+          </li>
+          <li class="header__menu-item mobile">
+            <button class="burger">
+              <div class="burger-line">burger</div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__links-underline-wrapper">
+        <div
+          class="header__links-underline"
+          data-scroll="data-scroll-animate"
+        ></div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="" id="services"></div>
+      <section class="section services">
+        <h3 class="section__title services__title">Наши услуги</h3>
+        <p class="section__desc services__desc">
+          Мы предоставляем полный комплекс услуг по кузовному ремонту любой
+          сложности
+        </p>
+
+        <div class="services__cards">
+          <a href="#" class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/elements.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Покраска кузовных элементов
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Покраска кузовных элементов
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a href="#" class="services__card service-card">
+            <!-- <picture class="service-card__picture">
+                        <source type="image/webp" srcset="img/cards/perehod.webp" />
+                        <img src="img/cards/elements.jpg" />
+                    </picture> -->
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Покраска с&nbsp;переходом, локальный ремонт
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Покраска с&nbsp;переходом, локальный ремонт
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a
+            href="#"
+            class="services__card service-card"
+            style="background: #d6a354"
+          >
+            <!-- <picture class="service-card__picture">
+                        <source type="image/webp" srcset="img/cards/stapel.webp" />
+                        <img src="img/cards/elements.jpg" />
+                    </picture> -->
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Стапель, восстановление геометрии
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Стапель, восстановление геометрии
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a href="#" class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/plastic.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Ремонт бамперов, пластиковых деталей
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Ремонт бамперов, пластиковых деталей
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a href="#" class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/asphalt-1.jpg" />
+              <img src="img/cards/asphalt-1.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Капитальный ремонт кузова
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Капитальный ремонт кузова
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a
+            href="#"
+            class="services__card service-card"
+            style="background: #fff"
+          >
+            <!-- <picture class="service-card__picture">
+                        <source type="image/webp" srcset="img/cards/polirovka.webp" />
+                        <img src="img/cards/elements.jpg" />
+                    </picture> -->
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Полировка кузова</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Полировка кузова</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a href="#" class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/vmyatina.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Устранение вмятин</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Устранение вмятин</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a
+            href="#"
+            class="services__card service-card"
+            style="background: #d3d4c9"
+          >
+            <!-- <picture class="service-card__picture">
+                        <source type="image/webp" srcset="img/cards/svarka.webp" />
+                        <img src="img/cards/elements.jpg" />
+                    </picture> -->
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Сварочные работы</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Сварочные работы</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a href="#" class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/antihrom.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Антихром</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">Антихром</h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+          <a href="#" class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/fary.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Полировка и восстановление фар
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+
+            <div class="service-card__desc_hover">
+              <!-- <div class="service-card__line top"></div> -->
+              <h4 class="service-card__desc-title">
+                Полировка и восстановление фар
+              </h4>
+              <!-- <div class="service-card__line bottom"></div> -->
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <div class="" id="works"></div>
+      <section class="section services">
+        <h3 class="section__title services__title">Наши работы</h3>
+        <p class="section__desc services__desc">
+          Мы сделали сотни автомобилей снова красивыми
+        </p>
+
+        <div class="services__cards">
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/elements.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">
+                Покраска кузовных элементов
+              </h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/antihrom.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">
+                Покраска с&nbsp;переходом, локальный ремонт
+              </h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/fary.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">
+                Стапель, восстановление геометрии
+              </h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/kapremont.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">
+                Ремонт бамперов, пластиковых деталей
+              </h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/perehod.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">
+                Капитальный ремонт кузова
+              </h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/vmyatina.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">Полировка кузова</h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/plastic.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">Устранение вмятин</h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/polirovka.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">Сварочные работы</h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/stapel.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">Антихром</h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+          <div class="services__card service-card">
+            <picture class="service-card__picture">
+              <source type="image/webp" srcset="img/cards/svarka.webp" />
+              <img src="img/cards/elements.jpg" />
+            </picture>
+            <div class="service-card__desc">
+              <div class="service-card__line top"></div>
+              <h4 class="service-card__desc-title">
+                Полировка и восстановление фар
+              </h4>
+              <div class="service-card__line bottom"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer test">footer</footer>
+
+    <script src="script/jquery-3.7.0.min.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
