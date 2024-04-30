@@ -60,6 +60,11 @@
   src: url("fonts/Inter-Light.woff") format("truetype");
 }
 
+/*@font-face {
+  font-family: "Monoton";
+  src: url("fonts/monoton.woff") format("truetype");
+}*/
+
 /*оплатить шрифт тут https://type.today/ru/druk_text_wide */
 @font-face {
   font-family: "Druk";
@@ -239,6 +244,11 @@ button {
   box-shadow: 0 12rem 21rem #0c100f;
 }
 
+.header__links.shadow .header__links-bg {
+  top: 0;
+  opacity: 1;
+}
+
 .header__links-wrapper {
   display: flex;
   justify-content: space-between;
@@ -250,6 +260,7 @@ button {
   height: 100%;
 
   position: absolute;
+  /* top: -100%; */
   top: -100%;
   left: 0;
 
@@ -792,7 +803,7 @@ button {
     transition: 0.5s ease-out;
     background: rgba(255, 255, 255, 0.5);
     /*height: 200%;*/
-    transform: scale(3);
+    transform: scale(2);
   }
 
   .services__card:hover .service-card__desc * {

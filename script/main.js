@@ -16,9 +16,10 @@ $(document).on("scroll", () => {
   }
 
   const heroHeight = scrollElements[0].clientHeight;
+  const headerHeight = header[0].clientHeight;
 
   $(document).on("scroll", () => {
-    if ($(document).scrollTop() >= heroHeight - 1) {
+    if ($(document).scrollTop() >= heroHeight - headerHeight / 1.6) {
       $(header).addClass("shadow");
     } else $(header).removeClass("shadow");
   });
