@@ -219,7 +219,7 @@ button {
   left: 0;
   z-index: 9;
 
-  backdrop-filter: blur(0rem);
+  /* backdrop-filter: blur(0rem); */
   transition: 0.5s 0.6s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
@@ -228,9 +228,12 @@ button {
   /* background-color: rgba(12, 16, 15, 0.26); */
   /* background-color: #0c100f; */
   background-color: #1f1f1d;
-  box-shadow: 0 12rem 21rem #0c100f;
 
-  transition: 0.5s 0.3s ease-in-out, box-shadow 0.5s 0.8s ease-in-out;
+  transition: 0.5s 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header__links.shadow {
+  box-shadow: 0 12rem 21rem #0c100f;
 }
 
 .header__links-wrapper {
@@ -864,6 +867,19 @@ button {
   color: #0c100f;
 }
 
+.service-card__desc_hover .service-card__desc-note {
+  font-family: "Oswald", sans-serif;
+  color: #0c100f;
+
+  line-height: 1.15;
+
+  font-size: 20rem;
+}
+
+.service-card__desc_hover .service-card__desc-price {
+  color: #0c100f;
+}
+
 .service-card__line {
   width: calc(100% - 12rem - 12rem);
   height: 1px;
@@ -911,4 +927,16 @@ button {
   font-size: 24rem;
   color: var(--header-nav-color);
   line-height: 1.15;
+}
+
+.service-card__desc-note {
+  font-family: "Oswald", sans-serif;
+  color: var(--header-nav-color);
+  line-height: 1.15;
+
+  font-size: 20rem;
+}
+
+.service-card__desc-price {
+  color: var(--h1-color);
 }

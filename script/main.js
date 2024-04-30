@@ -1,4 +1,5 @@
 const scrollElements = $("[data-scroll=data-scroll-animate]");
+const header = $(".header__links");
 // const scrollButtonsToDisable = $("[data-scroll=data-scroll-disable]");
 
 // console.log(scrollButtonsToDisable);
@@ -13,4 +14,12 @@ $(document).on("scroll", () => {
       $(element).removeClass("scroll");
     });
   }
+
+  const heroHeight = scrollElements[0].clientHeight;
+
+  $(document).on("scroll", () => {
+    if ($(document).scrollTop() >= heroHeight - 1) {
+      $(header).addClass("shadow");
+    } else $(header).removeClass("shadow");
+  });
 });
