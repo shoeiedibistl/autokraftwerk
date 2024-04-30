@@ -120,9 +120,8 @@
 /* -- Custom scrollbar --  */
 
 .test {
-  border: 1px solid green;
+  border: 1px solid red !important;
 
-  font-size: 20rem;
   /* color: red; */
 }
 
@@ -142,6 +141,9 @@
   overflow-x: hidden;
   /* scroll-behavior: smooth; */
   /* height: 2000px; */
+  font-size: 20rem;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
 }
 
 * {
@@ -299,6 +301,10 @@ button {
 .logo {
   width: max-content;
   height: fit-content;
+
+  display: flex;
+  align-items: baseline;
+
   position: relative;
   text-shadow: 1rem 1rem 2rem var(--calc-background-color);
 }
@@ -633,6 +639,9 @@ button {
   width: 46rem;
   height: 24rem;
 
+  display: flex;
+  align-items: center;
+
   flex-shrink: 1;
 
   font-size: 24rem;
@@ -692,6 +701,10 @@ button {
   /* background: #fff; */
 
   position: relative;
+}
+
+.section__content {
+  margin-top: 120rem;
 }
 
 .section__counter {
@@ -985,4 +998,139 @@ button {
 
 .service-card__desc-price {
   color: var(--h1-color);
+
+  font-size: 18rem;
+}
+
+.footer {
+  background-color: #0c100f;
+  padding: 60px 20px 20px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.footer .logo {
+  display: block;
+  margin: 0 auto 60px;
+}
+
+.footer-field {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-field a {
+  color: #cccccc;
+}
+
+.footer-field nav {
+  margin-bottom: 4px;
+}
+
+.footer-field nav a,
+.footer-field nav p {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  height: 42px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.035em;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.footer-field nav a:hover {
+  /* color: #d6a354; */
+  color: var(--h1-color);
+}
+
+.footer-field section {
+  text-align: center;
+}
+
+.footer .not-offer {
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.footer-field p {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-string {
+  height: 40px;
+  width: 100%;
+  background-color: #060502;
+  padding-right: 20px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.footer-string__field {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #303030;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-string__dates {
+  color: #cccccc;
+  font-weight: 300;
+}
+
+.footer-string a {
+  font-size: 12px;
+  color: #404040;
+  line-height: 40px;
+}
+
+.footer-string a:hover {
+  text-decoration: underline;
+}
+
+.footer .socials {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto 80px;
+}
+
+.footer .socials a {
+  background-color: rgba(65, 65, 65, 1);
+}
+
+.footer .auto {
+  font-size: 40px;
+}
+
+.footer .kraftwerk {
+  font-size: 28px;
+}
+
+.footer .socials-img.socials-img1:active {
+  background-color: #ccc;
+}
+
+.footer .share-btn:active {
+  background-color: #ccc;
+}
+
+.works-slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40rem;
 }
