@@ -375,7 +375,9 @@
                     </picture> -->
             <div class="service-card__desc">
               <!-- <div class="service-card__line top"></div> -->
-              <h4 class="service-card__desc-title">Сварочные работы</h4>
+              <h4 class="service-card__desc-title">
+                Сварочные работы, лужение, пайка
+              </h4>
               <div class="service-card__desc-note">
                 От <span class="service-card__desc-price">1 500&#8381;</span>
               </div>
@@ -384,7 +386,9 @@
 
             <div class="service-card__desc_hover">
               <!-- <div class="service-card__line top"></div> -->
-              <h4 class="service-card__desc-title">Сварочные работы</h4>
+              <h4 class="service-card__desc-title">
+                Сварочные работы, лужение, пайка
+              </h4>
               <div class="service-card__desc-note">
                 От <span class="service-card__desc-price">1 500&#8381;</span>
               </div>
@@ -455,11 +459,41 @@
           Мы сделали сотни автомобилей снова красивыми
         </p>
 
-        <div class="section__content works test">
-          наши работы
+        <div class="section__content low works">
           <div class="works-slider">
-            <div class="test">pic</div>
-            <div class="test">text</div>
+            <div class="works-slider__image">
+              <img-comparison-slider
+                class="slider-example-split-line rendered"
+                hover="hover"
+                tabindex="0"
+              >
+                <figure slot="first" class="before">
+                  <img width="100%" src="img/5.webp" />
+                  <figcaption>До</figcaption>
+                </figure>
+                <figure slot="second" class="after">
+                  <img width="100%" src="img/6.webp" />
+                  <figcaption>После</figcaption>
+                </figure>
+
+                <svg
+                  slot="handle"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  viewBox="-8 -3 16 6"
+                >
+                  <path
+                    class="comparison-slider-arrow"
+                    stroke="#fff"
+                    d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+                    stroke-width="0"
+                    fill="#fff"
+                    vector-effect="non-scaling-stroke"
+                  ></path>
+                </svg>
+              </img-comparison-slider>
+            </div>
+            <div class="works-slider__desc">наши работы < ></div>
           </div>
         </div>
       </section>
@@ -569,5 +603,6 @@
 
     <script src="script/jquery-3.7.0.min.js"></script>
     <script src="script/main.js"></script>
+    <script src="script/comparison-script.js"></script>
   </body>
 </html>

@@ -60,6 +60,11 @@
   src: url("fonts/Inter-Light.woff") format("truetype");
 }
 
+@font-face {
+  font-family: "Comic-Sans";
+  src: url("fonts/ComicSansMS-Italic.woff") format("truetype");
+}
+
 /*@font-face {
   font-family: "Monoton";
   src: url("fonts/monoton.woff") format("truetype");
@@ -321,7 +326,8 @@ button {
 }
 
 .logo__auto {
-  font-family: "Monoton", cursive;
+  /* font-family: "Monoton", cursive; */
+  font-family: "Comic-Sans";
   /* font-size: 32rem; */
   font-size: 40rem;
   color: var(--header-nav-color);
@@ -718,6 +724,10 @@ button {
   margin-top: 120rem;
 }
 
+.section__content.low {
+  margin-top: 60rem;
+}
+
 .section__counter {
   position: absolute;
   top: 62rem;
@@ -800,10 +810,11 @@ button {
     /* background: #0c100f; */
 
     /* transition: background 0.25s ease-out, height 0.5s ease-out; */
-    transition: 0.5s ease-out;
+    transition: 0.5s ease-out, border-color 0.2s ease-out;
     background: rgba(255, 255, 255, 0.5);
     /*height: 200%;*/
-    transform: scale(2);
+    transform: scale(1.65);
+    border-color: transparent;
   }
 
   .services__card:hover .service-card__desc * {
@@ -875,8 +886,9 @@ button {
   height: 140rem; */
   /* width: 400rem; */
   height: 80%;
+  width: 63%;
   /*aspect-ratio: 1.1 / 1;*/
-  aspect-ratio: 1.3 / 1;
+  /* aspect-ratio: 1.31 / 1; */
 
   /*position: absolute;*/
   /* left: 6rem;
@@ -908,14 +920,14 @@ button {
 }
 
 .service-card__desc_hover {
-  height: 80%;
+  height: 84%;
   /* aspect-ratio: 1.1 / 1;*/
   aspect-ratio: 1.3 / 1;
 
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0.75);
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -997,6 +1009,7 @@ button {
   font-size: 24rem;
   color: var(--header-nav-color);
   line-height: 1.15;
+  text-transform: uppercase;
 }
 
 .service-card__desc-note {
@@ -1004,7 +1017,8 @@ button {
   color: var(--header-nav-color);
   line-height: 1.15;
 
-  font-size: 20rem;
+  font-size: 16rem;
+  text-transform: uppercase;
 }
 
 .service-card__desc-price {
@@ -1144,4 +1158,27 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40rem;
+}
+
+.works-slider__image {
+  width: 880rem;
+  height: 528rem;
+
+  background: #ccc;
+
+  border-radius: 12rem;
+
+  overflow: hidden;
+}
+
+.works-slider__image img {
+  min-width: 100%;
+  min-height: 100%;
+
+  object-fit: cover;
+}
+
+img-comparison-slider {
+  min-width: 100%;
+  min-height: 100%;
 }
