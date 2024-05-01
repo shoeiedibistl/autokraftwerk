@@ -818,7 +818,7 @@ button {
   }
 
   .services__card:hover .service-card__desc * {
-    transition: 0.15s 0.15s ease-out, opacity 0.15s;
+    transition: 0.15s 0.15s ease-out, opacity 0.3s;
     opacity: 0;
   }
 
