@@ -1171,6 +1171,10 @@ button {
   overflow: hidden;
 }
 
+.works-slider__text {
+  position: relative;
+}
+
 .works-slider__image img {
   min-width: 100%;
   min-height: 100%;
@@ -1181,4 +1185,100 @@ button {
 img-comparison-slider {
   min-width: 100%;
   min-height: 100%;
+}
+
+.works-slider__title {
+  font-size: 64rem;
+
+  position: relative;
+
+  padding-top: 20rem;
+  margin-left: -132rem;
+
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Druk", sans-serif;
+
+  pointer-events: none;
+
+  /* text-shadow: 5px 5px rgba(255, 255, 255, 0.15); */
+}
+
+.works-slider__desc {
+  margin-left: 240rem;
+  margin-top: 48rem;
+}
+
+.works-slider__desc ul {
+  width: 600rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem 40rem;
+}
+
+.works-slider__desc ul li {
+  font-size: 20rem;
+  line-height: 140%;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.works-slider__desc ul li::before {
+  content: "";
+
+  display: block;
+  width: 14rem;
+  height: 4rem;
+  border-radius: 1rem;
+
+  position: absolute;
+  top: 8rem;
+  left: -32rem;
+
+  background: var(--h1-color);
+}
+
+.works-slider__buttons {
+  position: absolute;
+  bottom: 0;
+  left: 208rem;
+
+  display: flex;
+  gap: 8rem;
+}
+
+.works-slider__button {
+  width: 80rem;
+  height: 80rem;
+
+  border: 1px solid #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0.4;
+
+  transition: 0.5s ease-out;
+}
+
+@media (min-width: 1023px) {
+  .works-slider__button:hover {
+    opacity: 1;
+  }
+}
+
+.works-slider__button.left svg {
+  rotate: 180deg;
+}
+
+.works-slider__button svg {
+  width: 9rem;
+  height: 15rem;
+}
+
+.works-slider__button svg * {
+  transition: 0.5s ease-out;
 }
