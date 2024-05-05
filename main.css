@@ -1174,8 +1174,6 @@ button {
 .works-slider__text {
   position: relative;
   z-index: 1;
-
-  pointer-events: none;
 }
 
 .works-slider__image img {
@@ -1208,7 +1206,7 @@ img-comparison-slider {
   text-transform: uppercase;
   font-family: "Druk", sans-serif;
 
-  /* pointer-events: none; */
+  pointer-events: none;
 
   /* text-shadow: 5px 5px rgba(255, 255, 255, 0.15); */
 }
