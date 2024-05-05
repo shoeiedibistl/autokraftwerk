@@ -7,6 +7,9 @@
     <title>AUTOkraftwerk</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="icons-font.css" />
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+
+    <!-- /////////////////////////////////////////////////////////// -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- /////////////////////////////////////////////////////////// -->
   </head>
 
   <body class="body">
@@ -147,7 +152,7 @@
           </li>
           <li class="header__menu-item mobile">
             <button class="burger">
-              <div class="burger-line">burger</div>
+              <span class="burger-line">burger</span>
             </button>
           </li>
         </ul>
@@ -461,48 +466,207 @@
 
         <div class="section__content low works">
           <div class="works-slider">
-            <div class="works-slider__image">
-              <img-comparison-slider
-                class="slider-example-split-line rendered"
-                hover="hover"
-                tabindex="0"
-              >
-                <figure slot="first" class="before">
-                  <img width="100%" src="img/5.webp" />
-                  <figcaption>До</figcaption>
-                </figure>
-                <figure slot="second" class="after">
-                  <img width="100%" src="img/6.webp" />
-                  <figcaption>После</figcaption>
-                </figure>
+            <div class="swiper" data-slider="works-img">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="works-slider__image">
+                    <img-comparison-slider
+                      class="slider-example-split-line rendered"
+                      hover="hover"
+                      tabindex="0"
+                    >
+                      <figure slot="first" class="before">
+                        <img width="100%" src="img/1.webp" />
+                        <figcaption>До</figcaption>
+                      </figure>
+                      <figure slot="second" class="after">
+                        <img width="100%" src="img/2.webp" />
+                        <figcaption>После</figcaption>
+                      </figure>
 
-                <svg
-                  slot="handle"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  viewBox="-8 -3 16 6"
-                >
-                  <path
-                    class="comparison-slider-arrow"
-                    stroke="#fff"
-                    d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
-                    stroke-width="0"
-                    fill="#fff"
-                    vector-effect="non-scaling-stroke"
-                  ></path>
-                </svg>
-              </img-comparison-slider>
+                      <svg
+                        slot="handle"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100"
+                        viewBox="-8 -3 16 6"
+                      >
+                        <path
+                          class="comparison-slider-arrow"
+                          stroke="#fff"
+                          d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+                          stroke-width="0"
+                          fill="#fff"
+                          vector-effect="non-scaling-stroke"
+                        ></path>
+                      </svg>
+                    </img-comparison-slider>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="works-slider__image">
+                    <img-comparison-slider
+                      class="slider-example-split-line rendered"
+                      hover="hover"
+                      tabindex="0"
+                    >
+                      <figure slot="first" class="before">
+                        <img width="100%" src="img/3.webp" />
+                        <figcaption>До</figcaption>
+                      </figure>
+                      <figure slot="second" class="after">
+                        <img width="100%" src="img/4.webp" />
+                        <figcaption>После</figcaption>
+                      </figure>
+
+                      <svg
+                        slot="handle"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100"
+                        viewBox="-8 -3 16 6"
+                      >
+                        <path
+                          class="comparison-slider-arrow"
+                          stroke="#fff"
+                          d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+                          stroke-width="0"
+                          fill="#fff"
+                          vector-effect="non-scaling-stroke"
+                        ></path>
+                      </svg>
+                    </img-comparison-slider>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="works-slider__image">
+                    <img-comparison-slider
+                      class="slider-example-split-line rendered"
+                      hover="hover"
+                      tabindex="0"
+                    >
+                      <figure slot="first" class="before">
+                        <img width="100%" src="img/5.webp" />
+                        <figcaption>До</figcaption>
+                      </figure>
+                      <figure slot="second" class="after">
+                        <img width="100%" src="img/6.webp" />
+                        <figcaption>После</figcaption>
+                      </figure>
+
+                      <svg
+                        slot="handle"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100"
+                        viewBox="-8 -3 16 6"
+                      >
+                        <path
+                          class="comparison-slider-arrow"
+                          stroke="#fff"
+                          d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+                          stroke-width="0"
+                          fill="#fff"
+                          vector-effect="non-scaling-stroke"
+                        ></path>
+                      </svg>
+                    </img-comparison-slider>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="works-slider__image">
+                    <img-comparison-slider
+                      class="slider-example-split-line rendered"
+                      hover="hover"
+                      tabindex="0"
+                    >
+                      <figure slot="first" class="before">
+                        <img width="100%" src="img/3.webp" />
+                        <figcaption>До</figcaption>
+                      </figure>
+                      <figure slot="second" class="after">
+                        <img width="100%" src="img/4.webp" />
+                        <figcaption>После</figcaption>
+                      </figure>
+
+                      <svg
+                        slot="handle"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100"
+                        viewBox="-8 -3 16 6"
+                      >
+                        <path
+                          class="comparison-slider-arrow"
+                          stroke="#fff"
+                          d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2"
+                          stroke-width="0"
+                          fill="#fff"
+                          vector-effect="non-scaling-stroke"
+                        ></path>
+                      </svg>
+                    </img-comparison-slider>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="works-slider__text">
-              <div class="works-slider__title">huyndai sonata</div>
+              <div class="swiper" data-slider="works-title">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="works-slider__title">Mercedes GL300</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="works-slider__title">nissan qashqai</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="works-slider__title">huyndai sonata</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="works-slider__title">nissan qashqai</div>
+                  </div>
+                </div>
+              </div>
+
               <div class="works-slider__desc">
-                <ul>
-                  <li>дверь передняя</li>
-                  <li>дверь задняя</li>
-                  <li>крыло переднее</li>
-                  <li>порог</li>
-                  <li>зеркало</li>
-                </ul>
+                <div class="swiper" data-slider="works-desc">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul>
+                        <li>капот</li>
+                        <li>Монтажная панель</li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li>Силовая конструкция</li>
+                        <li>Стойка правая</li>
+                        <li>Крылья передние</li>
+                        <li>Бампер передний</li>
+                        <li>Капот</li>
+                        <li>Монтажная панель</li>
+                        <li>решетка радиатора</li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li>дверь передняя</li>
+                        <li>дверь задняя</li>
+                        <li>крыло переднее</li>
+                        <li>порог</li>
+                        <li>зеркало</li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li>Силовая конструкция</li>
+                        <li>Стойка правая</li>
+                        <li>Крылья передние</li>
+                        <li>Бампер передний</li>
+                        <li>Капот</li>
+                        <li>Монтажная панель</li>
+                        <li>решетка радиатора</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="works-slider__remote">
                 <div class="works-slider__buttons">
@@ -535,6 +699,7 @@
                     </svg>
                   </button>
                 </div>
+                <div class="works-slider__pagination"></div>
               </div>
             </div>
           </div>
@@ -542,110 +707,20 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-field">
-        <a class="logo" href="autokraftwerk.html">
-          <span class="logo-name"
-            ><span class="auto">AUTO</span
-            ><span class="kraftwerk">KRAFTWERK</span></span
-          >
-        </a>
-        <nav>
-          <a href="#services" class="scroll-to">Услуги</a>
-          <a href="">Наши работы</a>
-          <a href="#calculator" class="scroll-to">Калькулятор</a>
-          <a href="#about" class="scroll-to">О нас</a>
-          <a href="#contacts" class="scroll-to">Контакты</a>
-          <a href="tel:+79525466444">+7 (952) 546-64-44</a>
-          <p>г. Воронеж, ул. 9 Января, д. 211А/2Б</p>
-        </nav>
-      </div>
-
-      <div class="socials socials1">
-        <a
-          href="https://ok.ru/group/70000002350330/"
-          class="socials-img socials-img1 socials-odnoklassniki"
-          target="_blank"
-          ><i class="icon-odnoklassniki"></i
-        ></a>
-        <a
-          href="https://vk.com/autokraftwerk"
-          class="socials-img socials-img1 socials-vk"
-          target="_blank"
-          ><i class="icon-vk"></i
-        ></a>
-        <a
-          href="https://wa.me/+79525466444"
-          class="socials-img socials-img1 socials-whatsapp"
-          target="_blank"
-          ><i class="icon-whatsapp"></i
-        ></a>
-        <a
-          href="https://t.me/+79525466444"
-          class="socials-img socials-img1 socials-telegram"
-          target="_blank"
-          ><i class="icon-telegram"></i
-        ></a>
-
-        <div class="socials-share">
-          <button id="share-btn" class="share-btn">
-            <i id="share-btn-i" class="icon-share"></i>
-          </button>
-          <!-- <div id="socials__share-list" class="socials__share-list">
-            <div class="socials__share-list_inner">
-              <h6>Поделиться:</h6>
-              <div class="socials__share_socials">
-                <a href="https://connect.ok.ru/offer?url=http://autoservise36.ru&title=Кузовной ремонт любой сложности в Воронеже"
-                  target="_blank" class="socials__share_odnoklassniki"><i class="icon-odnoklassniki"></i></a>
-                <a href="https://vk.com/share.php?url=http://autoservise36.ru" target="_blank"
-                  class="socials__share_vk"><i class="icon-vk"></i></a>
-                <a href="https://wa.me/?text=http://autoservise36.ru/ — кузовной ремонт любой сложности в Воронеже"
-                  target="_blank" class="socials__share_whatsapp"><i class="icon-whatsapp"></i></a>
-                <a href="https://t.me/share/url?url=https://autoservise36.ru/&text=AUTOKRAFTWERK.ru — кузовной ремонт любой сложности в Воронеже"
-                  target="_blank" class="socials__share_telegram"><i class="icon-telegram"></i></a>
-              </div>
-              <h6>Или скопировать ссылку:</h6>
-              <div id="share-link" class="share-link">
-                <span id="share-link__link">https://autokraftwerk.ru/</span>
-              </div>
-              <h6 style="font-size: 12px; text-align: center; margin-bottom: 0;">(нажмите, чтобы скопировать)</h6>
-            </div>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="not-offer">
-        <p>
-          Вся информация, представленная на сайте, носит ознакомительный
-          характер и не является офертой
-        </p>
-      </div>
-      <div class="made-by">
-        <p>
-          <i class="icon-heart"></i> Создание сайта
-          <a href="https://t.me/shoeiedibistl" target="_blank">shoeiedibistl</a>
-        </p>
-      </div>
-    </footer>
-
-    <div class="footer-string">
-      <div class="footer-string__field">
-        <div class="footer-string__dates">
-          &#xa9; AUTOKRAFTWERK 2007 -
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-        </div>
-        <div class="footer-string__pics">
-          powered by
-          <a href="https://www.flaticon.com/" target="_blank">flaticon</a>
-          <a href="https://www.freepik.com/" target="_blank">freepik</a>
-        </div>
-      </div>
-    </div>
-
     <script src="script/jquery-3.7.0.min.js"></script>
     <script src="script/main.js"></script>
     <script src="script/comparison-script.js"></script>
+    <!-- <script src="script/swiper-bundle.min.js"></script> -->
+    <script src="script/swiper-bundle.min.js"></script>
+    <!-- <script src="script/sliders.mjs"></script> -->
+
+    <!-- <script type="module"> 
+      // import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11.1.1/+esm";
+      // import Swiper from "script/swiper-init.js";
+      // console.log("swiper");
+
+      // const mySwiper = new Swiper('[data-slider="works-img"]', {});
+      // console.log(mySwiper);
+    // </script>-->
   </body>
 </html>
