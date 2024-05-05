@@ -1383,4 +1383,5 @@ img-comparison-slider {
 
 .works-slider [data-slider="works-img"] .swiper-slide {
   width: fit-content !important;
+  cursor: ew-resize;
 }
