@@ -1243,7 +1243,7 @@ img-comparison-slider {
 
 .swiper[data-slider="works-title"] .swiper-slide-active .works-slider__title {
   transform: translate3d(0, 0, 0);
-  transition-delay: 0.6s;
+  transition-delay: 0.5s;
 }
 
 .swiper[data-slider="works-desc"] {
