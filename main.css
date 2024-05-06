@@ -1272,7 +1272,7 @@ img-comparison-slider {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8rem 40rem;
+  gap: 8rem 120rem;
 }
 
 .works-slider__desc ul li {
