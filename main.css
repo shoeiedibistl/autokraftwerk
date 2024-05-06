@@ -909,7 +909,7 @@ button {
   backdrop-filter: blur(4px);
 
   /*  transition: background 0.25s ease-out, height 0.25s ease-out;*/
-  transition: 0.3s 0.15s ease-out;
+  transition: 0.3s cubic-bezier(0.33, 1, 0.68, 1) 0.15s;
 
   text-align: center;
 }
@@ -1332,7 +1332,7 @@ img-comparison-slider {
   padding: 0;
   margin: 0 !important;
 
-  transition: 0.5s ease-out;
+  transition: 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .works-slider__pagination
