@@ -1261,7 +1261,7 @@ img-comparison-slider {
 
 .swiper[data-slider="works-desc"] .swiper-slide-active {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.75s;
 
   transition-delay: 0.5s;
 }
