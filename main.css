@@ -1196,7 +1196,8 @@ img-comparison-slider {
 
   text-wrap: nowrap;
 
-  font-size: 64rem;
+  /* font-size: 64rem; */
+  font-size: 72rem;
 
   position: relative;
 
