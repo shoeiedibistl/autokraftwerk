@@ -1246,6 +1246,10 @@ img-comparison-slider {
   transition-delay: 0.5s;
 }
 
+.swiper[data-slider="works-desc"] .swiper-wrapper {
+  transition-delay: 0.25s;
+}
+
 .swiper[data-slider="works-desc"] {
   width: 100%;
 }
@@ -1257,7 +1261,9 @@ img-comparison-slider {
 
 .swiper[data-slider="works-desc"] .swiper-slide-active {
   opacity: 1;
-  transition-delay: 0.4s;
+  transition: 0.5s;
+
+  transition-delay: 0.5s;
 }
 
 .works-slider__desc {
@@ -1332,7 +1338,7 @@ img-comparison-slider {
   padding: 0;
   margin: 0 !important;
 
-  transition: 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: 1s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .works-slider__pagination
