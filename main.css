@@ -1318,12 +1318,12 @@ img-comparison-slider {
   width: max-content !important;
   display: flex;
   align-items: flex-end;
-  gap: 12rem;
+  gap: 18rem;
 }
 
 .works-slider__pagination .swiper-pagination-bullet {
   width: 2rem;
-  height: 40%;
+  height: 28%;
 
   border-radius: 1rem;
   background: rgba(255, 255, 255);
