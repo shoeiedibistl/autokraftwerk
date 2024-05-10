@@ -720,6 +720,10 @@ button {
   position: relative;
 }
 
+.section_calc {
+  background-color: #0c100f;
+}
+
 .section__content {
   margin-top: 120rem;
 }
