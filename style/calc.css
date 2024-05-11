@@ -20,46 +20,49 @@
 
 .h1 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 40rem;
   color: var(--title-article-color);
 }
 
 .calculator {
   display: flex;
-  /* max-width: 900px; */
-  margin: 40px auto;
-  justify-content: space-between;
+  /* max-width: 900rem; */
+  margin: 40rem auto;
+  justify-content: space-around;
 }
 
 .calc-field {
-  display: block;
-  width: 338px;
-  height: 500px;
-  text-align: center;
+  width: 420rem;
+  /* height: 500rem; */
+  /* text-align: center; */
   position: relative;
-  font-size: 32px;
+  font-size: 32rem;
   user-select: none;
-  height: 530px;
+  /* height: 530rem; */
+}
+
+.calc-field__buttons {
+  margin-bottom: 40rem;
 }
 
 .calc-field > svg {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
   width: 100%;
 }
 
 .counter {
   position: absolute;
-  font-size: 14px;
-  left: 20px;
-  bottom: -40px;
+  font-size: 14rem;
+  left: 20rem;
+  bottom: -40rem;
 }
 
 .checkAllDetailsBtn {
-  font-size: 14px;
-  width: 180px;
-  height: 36px;
+  font-size: 14rem;
+  width: 180rem;
+  height: 36rem;
   color: var(--color);
   position: absolute;
   top: 0;
@@ -67,7 +70,7 @@
   border-style: solid;
   border-width: 1px;
   border-color: var(--color);
-  border-radius: 100px;
+  border-radius: 100rem;
   transition: 0s;
   display: inline-block;
 }
@@ -78,13 +81,13 @@
 }
 
 .checkAllDetailsBtn:active {
-  transform: translatey(1px);
+  transform: translatey(1rem);
 }
 
 .clearAllDetailsBtn {
-  font-size: 14px;
-  width: 120px;
-  height: 36px;
+  font-size: 14rem;
+  width: 120rem;
+  height: 36rem;
   color: var(--color);
   position: absolute;
   top: 0;
@@ -92,10 +95,10 @@
   border-style: solid;
   border-width: 1px;
   border-color: var(--color);
-  border-radius: 100px;
+  border-radius: 100rem;
   transition: 0s;
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 40rem;
   margin-right: 0;
 }
 
@@ -105,7 +108,7 @@
 }
 
 .clearAllDetailsBtn:active {
-  transform: translatey(1px);
+  transform: translatey(1rem);
 }
 
 .calc-detail {
@@ -123,9 +126,17 @@
 }
 
 .calc-field button {
-  position: absolute;
+  /* position: absolute; */
   cursor: pointer;
   background-color: transparent;
+
+  font-size: 16rem;
+  color: #fff;
+  padding: 8rem 20rem;
+  border: 1px solid #fff;
+  border-radius: 4rem;
+
+  display: inline-block;
 }
 
 .calc-result {
@@ -135,10 +146,10 @@
 
 .calc-instruction {
   position: absolute;
-  top: 65px;
+  top: 65rem;
   left: 0;
-  width: 500px;
-  height: 460px;
+  width: 500rem;
+  height: 460rem;
   background-color: #252525;
   z-index: 9;
   text-align: justify;
@@ -147,20 +158,20 @@
 }
 
 .calc-instruction__article {
-  border: 2px solid var(--color);
+  border: 2rem solid var(--color);
   width: 100%;
   height: 100%;
-  padding: 28px 20px;
+  padding: 28rem 20rem;
   font-weight: 400;
   cursor: default;
 }
 
 .scheme-instruction {
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 100rem auto;
   grid-template-rows: auto;
   letter-spacing: 0.035em;
-  font-size: 18px;
+  font-size: 18rem;
   font-weight: 300;
 }
 
@@ -170,7 +181,7 @@
 }
 
 .calc-instruction p {
-  font-size: 15px;
+  font-size: 15rem;
   line-height: 1.5;
   padding: 0.5rem;
   justify-self: left;
@@ -179,7 +190,7 @@
 .arrow_box {
   width: 100%;
   height: 100%;
-  padding: 24px;
+  padding: 24rem;
   position: relative;
 }
 
@@ -198,18 +209,18 @@
 .arrow_box:after {
   border-color: rgba(37, 37, 37, 0);
   border-right-color: #252525;
-  border-width: 15px;
-  margin-top: -15px;
+  border-width: 15rem;
+  margin-top: -15rem;
 }
 .arrow_box:before {
   border-color: rgba(137, 137, 137, 0);
-  margin-top: -18px;
+  margin-top: -18rem;
 }
 
 .calc-instruction h2 {
   text-align: center;
-  margin: 0 auto 20px;
-  font-size: 20px;
+  margin: 0 auto 20rem;
+  font-size: 20rem;
   color: var(--title-article-color);
   text-decoration: none;
   text-transform: uppercase;
@@ -219,10 +230,10 @@
   text-align: right;
   list-style: none;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 18rem;
   line-height: 1.7;
-  width: 342px;
-  max-height: 500px;
+  width: 342rem;
+  max-height: 500rem;
 }
 
 #full-price-label {
@@ -233,9 +244,9 @@
   list-style: none;
   font-weight: 600;
   line-height: 1.7;
-  font-size: 18px;
-  width: 140px;
-  max-height: 400px;
+  font-size: 18rem;
+  width: 140rem;
+  max-height: 400rem;
   text-align: end;
 }
 
@@ -252,26 +263,26 @@
 }
 
 .calc-item label > span {
-  font-size: 16px;
+  font-size: 16rem;
   user-select: none;
 }
 
 .full-price {
-  font-size: 24px;
-  margin-bottom: 29px;
+  font-size: 24rem;
+  margin-bottom: 29rem;
 }
 
 .full-price-li {
-  font-size: 22px;
+  font-size: 22rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 30rem;
 }
 
 .switch {
   display: inline-block;
-  height: 17px;
+  height: 17rem;
   position: relative;
-  width: 30px;
+  width: 30rem;
 }
 
 .switch input {
@@ -291,13 +302,13 @@
 
 .slider:before {
   background-color: var(--text-color);
-  bottom: 2px;
+  bottom: 2rem;
   content: "";
-  height: 13px;
-  left: 2px;
+  height: 13rem;
+  left: 2rem;
   position: absolute;
   transition: 0.4s;
-  width: 13px;
+  width: 13rem;
 }
 
 input:checked + .slider {
@@ -305,13 +316,13 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(13px);
+  transform: translateX(13rem);
 }
 
 .slider.round {
-  border-radius: 17px;
-  bottom: -3px;
-  top: 3px;
+  border-radius: 17rem;
+  bottom: -3rem;
+  top: 3rem;
 }
 
 .slider.round:before {
@@ -323,7 +334,7 @@ input:checked + .slider:before {
 }
 
 #full-price-label span {
-  font-size: 16px;
+  font-size: 16rem;
 }
 
 .calc-item > li {
@@ -333,7 +344,7 @@ input:checked + .slider:before {
 }
 
 .calc-item li label {
-  margin-left: 8px;
+  margin-left: 8rem;
 }
 
 .calc-banner {
@@ -345,13 +356,13 @@ input:checked + .slider:before {
   opacity: 0;
   visibility: hidden;
   background-color: rgba(6, 5, 2, 0.25);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(6rem);
   z-index: 9999;
   transition: all 0.3s;
 }
 
 .popup {
-  padding: 60px 32px;
+  padding: 60rem 32rem;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -360,64 +371,64 @@ input:checked + .slider:before {
   max-width: 98%;
   background-color: var(--background-color);
   border: 1px solid var(--color);
-  border-radius: 2px;
+  border-radius: 2rem;
   transition: all 0.3s;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 6rem 6rem 12rem rgba(0, 0, 0, 0.25);
   z-index: 3;
   color: var(--text-color);
   text-align: center;
-  max-width: 420px;
+  max-width: 420rem;
 }
 
 .popup h2 {
   color: var(--title-article-color);
-  font-size: 24px;
+  font-size: 24rem;
   position: static;
-  margin-bottom: 60px;
+  margin-bottom: 60rem;
 }
 
 .popup p {
   font-weight: 400;
-  margin-bottom: 60px;
-  font-size: 21px;
+  margin-bottom: 60rem;
+  font-size: 21rem;
 }
 
 .popup__sign-in {
-  height: 40px;
+  height: 40rem;
   width: fit-content;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 32rem;
+  padding-right: 32rem;
   background-color: var(--title-article-color);
   color: var(--text-color);
   box-sizing: border-box;
   position: relative;
-  line-height: 40px;
-  font-size: 14px;
+  line-height: 40rem;
+  font-size: 14rem;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
-  margin: 0 auto 8px;
+  margin: 0 auto 8rem;
   display: block;
 }
 
 .popup__no-thanx {
-  height: 40px;
-  width: 160px;
+  height: 40rem;
+  width: 160rem;
   color: var(--color);
   border: none;
   box-sizing: border-box;
   position: relative;
-  line-height: 40px;
-  font-size: 14px;
+  line-height: 40rem;
+  font-size: 14rem;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   background: transparent;
-  margin: 0 auto 8px;
+  margin: 0 auto 8rem;
   display: block;
 }
 
@@ -430,12 +441,12 @@ input:checked + .slider:before {
 }
 
 .close.popup__close {
-  font-size: 20px;
-  top: 20px;
+  font-size: 20rem;
+  top: 20rem;
   position: absolute;
-  right: 20px;
-  width: 24px;
-  height: 24px;
+  right: 20rem;
+  width: 24rem;
+  height: 24rem;
   color: var(--color);
   background-color: transparent;
   border: none;
@@ -447,31 +458,31 @@ input:checked + .slider:before {
 }
 
 #scheme-instruction__detail-img {
-  height: 30px;
+  height: 30rem;
 }
 
 #scheme-instruction__add-repair-img,
 #scheme-instruction__choose-all-img,
 #scheme-instruction__clear-all-img {
-  height: 20px;
+  height: 20rem;
 }
 
 .create {
   display: block;
-  width: 200px;
-  height: 40px;
+  width: 200rem;
+  height: 40rem;
   margin: 0 auto;
 }
 
 .my-result {
-  max-width: 460px;
-  margin: 20px auto;
+  max-width: 460rem;
+  margin: 20rem auto;
 }
 
 .sample {
   display: grid;
-  grid-template-columns: auto 80px;
-  column-gap: 40px;
+  grid-template-columns: auto 80rem;
+  column-gap: 40rem;
 }
 
 .sample > div {
