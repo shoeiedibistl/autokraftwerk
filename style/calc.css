@@ -20,6 +20,7 @@
 
 .h1 {
   text-align: center;
+  margin-top: 40rem;
   color: var(--title-article-color);
 }
 
@@ -142,7 +143,6 @@
 .calc-result {
   display: flex;
   position: relative;
-  padding-top: 80rem;
 }
 
 .calc-instruction {
