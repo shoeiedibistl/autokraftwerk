@@ -26,9 +26,9 @@
 
 .calculator {
   display: flex;
-  /* max-width: 900rem; */
+  width: max-content;
   margin: 40rem auto;
-  justify-content: space-around;
+  gap: 240rem;
 }
 
 .calc-field {
@@ -41,8 +41,9 @@
   /* height: 530rem; */
 }
 
-.calc-field__buttons {
-  margin-bottom: 40rem;
+.calc-buttons {
+  margin: 40rem 0;
+  position: relative;
 }
 
 .calc-field > svg {
@@ -125,7 +126,7 @@
   fill: #58a25c;
 }
 
-.calc-field button {
+.calc-buttons button {
   /* position: absolute; */
   cursor: pointer;
   background-color: transparent;
@@ -133,7 +134,7 @@
   font-size: 16rem;
   color: #fff;
   padding: 8rem 20rem;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 4rem;
 
   display: inline-block;
@@ -142,6 +143,7 @@
 .calc-result {
   display: flex;
   position: relative;
+  padding-top: 80rem;
 }
 
 .calc-instruction {
@@ -233,7 +235,7 @@
   font-size: 18rem;
   line-height: 1.7;
   width: 342rem;
-  max-height: 500rem;
+  /* max-height: 500rem; */
 }
 
 #full-price-label {
@@ -246,7 +248,7 @@
   line-height: 1.7;
   font-size: 18rem;
   width: 140rem;
-  max-height: 400rem;
+  /* max-height: 400rem; */
   text-align: end;
 }
 
