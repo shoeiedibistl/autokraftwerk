@@ -890,7 +890,7 @@ button {
   height: 140rem; */
   /* width: 400rem; */
   height: 80%;
-  width: 63%;
+  width: 64%;
   /*aspect-ratio: 1.1 / 1;*/
   /* aspect-ratio: 1.31 / 1; */
 
@@ -1403,4 +1403,9 @@ img-comparison-slider {
 .works-slider [data-slider="works-img"] .swiper-slide {
   width: fit-content !important;
   cursor: ew-resize;
+}
+
+.map {
+  height: 620rem;
+  margin-top: 80rem;
 }
