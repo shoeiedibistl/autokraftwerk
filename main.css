@@ -1285,7 +1285,7 @@ img-comparison-slider {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8rem 120rem;
+  gap: 8rem 90rem;
 }
 
 .works-slider__desc ul li {
@@ -1408,4 +1408,13 @@ img-comparison-slider {
 .map {
   height: 620rem;
   margin-top: 80rem;
+}
+
+.map-widget-map-component {
+  border: 1px solid red !important;
+  opacity: 0.2 !important;
+}
+
+.inline-image._loaded.map-circle-placemark__placemark {
+  color: red !important;
 }
