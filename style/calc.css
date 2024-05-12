@@ -42,6 +42,10 @@
 }
 
 .calc-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
   margin: 40rem 0;
   position: relative;
 }
@@ -128,6 +132,7 @@
 
 .calc-buttons button {
   /* position: absolute; */
+  height: max-content;
   cursor: pointer;
   background-color: transparent;
 
@@ -138,6 +143,23 @@
   border-radius: 4rem;
 
   display: inline-block;
+}
+
+.calc-buttons #calc-help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border: none;
+  width: 64rem;
+  height: 64rem;
+  border-radius: 50%;
+  box-shadow: 0 0 8rem #ccc;
+  font-size: 36rem;
+  font-family: druk;
+  background: #0c100f;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
 }
 
 .calc-result {
