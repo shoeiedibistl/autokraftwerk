@@ -117,7 +117,7 @@
 }
 
 .calc-detail {
-  transition: 0.1s;
+  transition: 0.3s cubic-bezier(0.33, 1, 0.68, 1);
   cursor: pointer;
 }
 
