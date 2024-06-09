@@ -1406,7 +1406,7 @@ img-comparison-slider {
 }
 
 .map {
-  height: 620rem;
+  height: 528rem;
   margin-top: 80rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
