@@ -730,7 +730,7 @@ button {
 
 .section_calc::before {
   content: "";
-  background-image: url("/img/calc-bg.png");
+  background-image: url("img/calc-bg.png");
   background-size: cover;
 
   opacity: 0.075;
