@@ -154,12 +154,25 @@
   width: 64rem;
   height: 64rem;
   border-radius: 50%;
-  box-shadow: 0 0 8rem #ccc;
+  box-shadow: 0 0 4rem #ccc;
   font-size: 36rem;
   font-family: druk;
   background: #0c100f;
   color: var(--h1-color);
   position: relative;
+  animation: calc-help 4s ease-in-out infinite;
+}
+
+@keyframes calc-help {
+  0% {
+    box-shadow: 0 0 4rem #ccc;
+  }
+  50% {
+    box-shadow: 0 0 16rem #ccc;
+  }
+  0% {
+    box-shadow: 0 0 4rem #ccc;
+  }
 }
 
 .calc-result {

@@ -1408,6 +1408,14 @@ img-comparison-slider {
 .map {
   height: 620rem;
   margin-top: 80rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.map__map {
+  border-radius: 12rem;
+  background-color: #0c100f;
+  overflow: hidden;
 }
 
 .map-widget-map-component {
@@ -1417,4 +1425,133 @@ img-comparison-slider {
 
 .inline-image._loaded.map-circle-placemark__placemark {
   color: red !important;
+}
+
+.ymaps-2-1-79-balloon__close {
+  position: absolute !important;
+  float: none !important;
+  top: 12px !important;
+  right: 12px !important;
+  opacity: 1;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  background: transparent;
+  /* border: 1px solid red; */
+}
+
+.ymaps-2-1-79-balloon__close-button {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50% !important;
+  /* background: url("img/ymap-icon.png") !important; */
+}
+
+.ymaps-2-1-79-balloon__close + .ymaps-2-1-79-balloon__content {
+  margin-right: 12px !important;
+}
+
+.contacts {
+  width: 100%;
+  height: 100%;
+  padding-right: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  font-family: Druk;
+  font-size: 42rem;
+  color: #fff;
+}
+
+.contacts .header__socials {
+  padding-bottom: 12rem;
+}
+
+.contacts .header__socials-link {
+  width: fit-content;
+  height: 36rem;
+  font-size: 36rem;
+  color: #ccc;
+}
+
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40rem;
+}
+
+.contacts__info {
+  font-family: "Oswald", sans-serif;
+  font-size: 32rem;
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.contacts__info li {
+  position: relative;
+}
+
+.contacts__info li::before {
+  content: "";
+  display: block;
+  width: 21rem;
+  height: 6rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 18rem;
+  left: -48rem;
+  background: var(--h1-color);
+}
+
+.contacts__info li a {
+  position: relative;
+  transition: 0.3s ease-out;
+}
+
+.contacts__info li a::after {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -4rem;
+  width: 0;
+  height: 2rem;
+  background-color: var(--h1-color);
+  border-radius: 2rem;
+  transition: width 0.5s;
+}
+
+.contacts__info li a:hover:after {
+  border: none;
+  content: "";
+  width: 100%;
+
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4rem;
+  height: 2rem;
+  background-color: var(--h1-color);
+  border-radius: 2rem;
+  transition: width 0.5s;
+}
+
+.contacts .logo__auto {
+  font-size: 80rem;
+}
+
+.contacts .logo__kraftwerk {
+  font-size: 55rem;
+}
+
+.contacts .logo__underline {
+  bottom: -10rem;
 }
