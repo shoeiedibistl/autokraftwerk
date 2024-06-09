@@ -1454,7 +1454,7 @@ img-comparison-slider {
 .contacts {
   width: 100%;
   height: 100%;
-  padding: 40rem 80rem 40rem 0;
+  padding: 40rem 80rem 0 0;
   /*  padding-right: 80rem; */
   display: flex;
   flex-direction: column;
