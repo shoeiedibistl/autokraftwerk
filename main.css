@@ -1413,8 +1413,8 @@ img-comparison-slider {
 }
 
 .map__map {
-  border-radius: 12rem;
   background-color: #0c100f;
+  border-radius: 12rem;
   overflow: hidden;
 }
 
@@ -1454,7 +1454,7 @@ img-comparison-slider {
 .contacts {
   width: 100%;
   height: 100%;
-  padding-right: 40rem;
+  padding-right: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
