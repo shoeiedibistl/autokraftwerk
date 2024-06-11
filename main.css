@@ -733,7 +733,7 @@ button {
   background-image: url("img/calc-bg.png");
   background-size: cover;
 
-  opacity: 0.075;
+  opacity: 0.15;
   position: absolute;
   z-index: -1;
   top: 0;
